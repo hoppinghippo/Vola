@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Vola</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+  <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="app.css">
+</head>
+<body ng-app="myapp">
+  <ul class="menu">
+    <li><a href="#/login">login</a></li>
+    <li><a href="#/setup-1">setup page one</a></li>
+    <li><a href="#/setup-2">setup page two</a></li>
+    <li><a href="#/setup-3">setup page three</a></li>
+    <li><a href="#/study">study</a></li>
+    <li><a href="#/WheresVola">Wheres vola</a></li>
+    <li><a href="#/WheresVolaActivity">Wheres vola - study</a></li>
+    <li><a href="#/Vola-results">Wheres vola - study</a></li>
+    <li><a href="#/view2">view2</a></li>
+    <li><a href="#/profile">profile</a></li>
+    <li><a href="#/adminHome">Admin</a></li>
+  </ul>
+
+
+  <div ng-view></div>
+
+  <div style="display:none;">Angular seed app: v<span app-version></span></div>
+
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="app.js"></script>
+  <script src="login/login.js"></script>
+  <script src="view2/view2.js"></script>
+  <script src="setup-1/setup-1.js"></script>
+  <script src="setup-2/setup-2.js"></script>
+  <script src="setup-3/setup-3.js"></script>
+  <script src="study/study.js"></script>
+  <script src="Admin/adminHome/adminHome.js"></script>
+  <script src="Admin/adminAttributes/adminAttributes.js"></script>
+  <script src="WheresVola/WheresVola.js"></script>
+  <script src="WheresVolaActivity/WheresVolaActivity.js"></script>
+  <script src="Feedback/initial/initial.js"></script>
+  <script src="Feedback/reviewGood/reviewGood.js"></script>
+  <script src="Feedback/reviewBad/reviewBad.js"></script>
+  <script src="profile/profile.js"></script>
+  <script src="Vola-results/Vola-results.js"></script>
+  <script src="components/version/version.js"></script>
+  <script src="components/version/version-directive.js"></script>
+  <script src="components/version/interpolate-filter.js"></script>
+</body>
+</html>

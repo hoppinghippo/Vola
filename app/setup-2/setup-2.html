@@ -1,0 +1,38 @@
+<nav class="navbar navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">	<div class="navbar-brand-logo"></div></a>
+    </div>
+  </div><!-- /.container-fluid -->
+</nav>
+<div class="container-fluid">
+  <div class="container-setup" ng-controller="setup-2Ctrl">
+    <h2>
+      Step 2 of 3: Prefrences
+    </h2>
+      <div class="row">
+        <div class="col-md-6">
+          <ul>
+            <li ng-repeat="interest in interests">
+              <div data-toggle="buttons">
+                <label class="vola-setup-btn btn btn-primary">
+                  <input type="checkbox" autocomplete="off" ng-model="interest.name">{{interest.name}}
+                </label>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-3 pull-right">
+        <a href="#/setup-1" class="nav-btn">Prev</a>
+        <a href="#/setup-3" class="nav-btn">Next</a>
+      </div>
+  </div>
+</div>

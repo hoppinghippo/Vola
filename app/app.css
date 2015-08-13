@@ -1,0 +1,260 @@
+/* app css stylesheet */
+
+body{
+  margin: none;
+  padding: none;
+  font-family: Arial;
+}
+a{
+  color:#FDD600;
+}
+h2{
+  margin-bottom: 20px;
+  font-style: bold;
+}
+h4{
+  color:#5AA700;
+  font-style: bold;
+}
+ul{
+  list-style: none;
+}
+/*
+---- Login Screen ----
+*/
+
+.login-container{
+    background-color: #262626;
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    position: absolute;
+}
+
+.loginLogo{
+  background: url("svg/vola-login.svg");
+  background-size: cover;
+  height: 0;
+  padding: 0; /* reset */
+  padding-bottom: calc(100% * 2.15 / 4);
+}
+
+
+.logoContainer{
+  margin:15%;
+  margin-top: 30%;
+}
+input{
+  margin-top:15px;
+  margin-bottom:15px;
+  padding: 10px !important;
+}
+.login-title{
+  text-align: center;
+  color:#8CD211;
+}
+.vola-btn{
+  background-image: linear-gradient(to bottom,#C8F08F 0,#8CD211 100%) !important;
+  
+}
+
+
+.signInHolder{
+  margin-top:25%;
+}
+.signInHolder h3{
+  color:#8CD211;
+  text-align: center;
+  font-size: 2em;
+}
+
+
+/*
+-------Setup page and nav--------
+*/
+
+
+
+.navbar-brand-logo{
+  background: url("svg/vola-login.svg");
+  height:30px;
+  width:50px;
+  background-repeat: no-repeat;
+}
+
+.navbar-fixed-top{
+  background-color: black;
+}
+.container-setup{
+  background-color: white;
+  color:black;
+  margin: 5%;
+}
+label{
+  display: block;
+}
+input{
+  border:none;
+  border-bottom: 1px solid lightgray;
+  min-width: 40%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.vola-setup-btn{
+  background-image: linear-gradient(to bottom,#C8F08F 0,#8CD211 100%) !important;
+  height: 40px;
+  width: 170px;
+  margin: 15px;
+  color:#262626;
+  font-style: bold;
+  font-size: 1.2em;
+  text-shadow:none;
+  border: 1px solid black;
+}
+
+.vola-activity-link{
+  background-image: linear-gradient(to bottom,#C8F08F 0,#8CD211 100%) !important;
+  height: 40px;
+  width: 170px;
+  margin: 15px;
+  color:#262626;
+  font-style: bold;
+  font-size: 1.2em;
+  text-shadow:none;
+  border: 1px solid black;
+  display: inline-block;
+  padding:6px;
+  text-align: center;
+}
+
+.vola-adminSvc-link{
+  background-image: linear-gradient(to bottom,#FDD600 0,#FDD600 100%) !important;
+  height: 40px;
+  width: 170px;
+  margin: 15px;
+  color:#262626;
+  font-style: bold;
+  font-size: 1.2em;
+  text-shadow:none;
+  border: 1px solid black;
+  display: inline-block;
+  padding:6px;
+  text-align: center;
+}
+.vola-setup-btn.active{
+   background-image: linear-gradient(to bottom,#8CD211 0,#5AA700 100%) !important;
+   border:2px solid black;
+
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {
+  background-color: #8CD211 !important;
+  background-image:none;
+ }
+
+.setup-friends{
+  color:black;
+  margin: 5px;
+  display: inline-block;
+
+}
+.setup-friends>input{
+    border:1px solid black;
+    border-radius: 3px;
+    margin: none;
+    padding:10px !important;
+    padding-left: 10px !important;
+    width: 250px;
+
+ }
+
+ .add-btn{
+  background-color: inherit;
+  border: none;
+  font-size: 1.3em;
+  font-style: bold;
+  color:green;
+  margin-top: 15px;
+ }
+
+.nav-btn{
+  font-size: 2em;
+  color: black;
+  margin:10px;
+}
+
+ .friend-btn{
+  background-color: inherit;
+  border: none;
+  font-size: 1.3em;
+  font-style: bold;
+  color:red;
+ }
+
+
+ .study-pref>li{
+  border-bottom: 1px solid #8CD211;
+ }
+ .study-pref{
+  list-style: none;
+  padding-left: 0px;
+ }
+ .setup-prefs{
+  margin-left: 0px;
+  margin-top: 10px;
+ }
+ .setup-pref{
+  margin-left: 5px;
+
+ }
+
+ .upcoming-events{
+    background-color: #5AA700;
+    color:black;
+    border-radius: 3px;
+    padding: 10px;
+ 
+ }
+ .upcoming-events>ul{
+     list-style: none;
+ }
+ .upcoming>input{
+    background-color: inherit;
+    border-bottom: none;
+    font-size: 1.3em;
+ }
+
+
+/*
+---- end setup css----
+*/
+
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.menu > li:nth-child(1):before {
+  content: "";
+  padding: 0;
+}

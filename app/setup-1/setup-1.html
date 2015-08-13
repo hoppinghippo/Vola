@@ -1,0 +1,49 @@
+<nav class="navbar navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">	<div class="navbar-brand-logo"></div></a>
+    </div>
+  </div><!-- /.container-fluid -->
+</nav>
+<div class="container-fluid">
+  <div class="container-setup" ng-controller="setup-1Ctrl">
+    <h2>
+      Step 1 of 3: Profile Setup
+    </h2>
+    <form name="myForm">
+    <label>
+       <input placeholder="Username" type="text" name="userName" ng-model="user.name" required>
+    </label>
+    <label>
+       <input placeholder="Password" type="text" name="userName" ng-model="user.password" required>
+    </label>
+    <label>
+       <input placeholder="Re-type password" type="text" name="userName" required>
+    </label>
+    <label>
+       <input placeholder="Home address" type="text" name="userName" ng-model="user.address" required>
+    </label>
+    <label>
+       <input placeholder="Cell phone" type="text" name="userName" ng-model="user.cell" required>
+    </label>
+    <label>
+       <input placeholder="Gender" type="text" name="userName" ng-model="user.gender" required>
+    </label>
+    <label>
+       <input placeholder="Birthdate" type="text" name="userName" ng-model="user.dob" required>
+    </label>
+  </form>
+
+  <div class="col-md-3 pull-right">
+    <a href="#/setup-2" class="nav-btn">Next</a>
+  </div>
+
+  </div>
+</div>

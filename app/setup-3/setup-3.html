@@ -1,0 +1,34 @@
+<nav class="navbar navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">	<div class="navbar-brand-logo"></div></a>
+    </div>
+  </div><!-- /.container-fluid -->
+</nav>
+<div class="container-fluid">
+  <div class="container-setup" ng-controller="setup-3Ctrl">
+    <h2>
+      Step 3 of 3: Add People
+    </h2>  
+    <ul>
+      <li ng-repeat="color in colors">
+        <button class="friend-btn"ng-click="colors.splice($index, 1)" aria-label="Remove">X</button>
+        <label class="setup-friends"><input ng-model="color.name"></label>
+      </li>
+      <li>
+        <button class="add-btn" ng-click="colors.push({})">+ Add More</button>
+      </li>
+    </ul>
+    <div class="col-md-3 pull-right">
+        <a href="#/setup-2" class="nav-btn">Prev</a>
+        <a href="#/WheresVola" class="nav-btn">Finish</a>
+      </div>
+  </div>
+</div>

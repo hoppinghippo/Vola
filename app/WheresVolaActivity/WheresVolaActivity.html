@@ -1,0 +1,81 @@
+<nav class="navbar navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">	<div class="navbar-brand-logo"></div></a>
+    </div>
+  </div><!-- /.container-fluid -->
+</nav>
+<div class="container-fluid">
+  <div class="container-setup" ng-controller="setup-3Ctrl">
+    <h2>
+      Wheres Vola:{{theActivity}}
+    </h2> 
+      <div class="col-md-6">
+        <h4>When?</h4>
+         <div data-toggle="buttons">
+          <label class="vola-setup-btn btn btn-primary" style="display:inline-block;">
+            <input type="checkbox" autocomplete="off" >Now
+          </label>
+          <label class="vola-setup-btn btn btn-primary" style="display:inline-block;">
+            <input type="checkbox" autocomplete="off">Future
+          </label>
+        </div>
+        <h4>When?</h4>
+        <ul>
+          <li ng-repeat="friend in friends">
+            <label class="setup-friends"><input ng-model="friend.name"></label>
+          </li>
+          <li>
+            <button class="add-btn" ng-click="friends.push({})">+ Add Friends</button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="row">
+
+        <div class="col-md-6">
+            <h4>Current Study Prefernces</h4>
+            <ul class="study-pref">
+              <li ng-repeat="preference in preferences">
+
+                <label class="setup-prefs" ng-model="preference.name">{{preference.name}}</label>
+                <div class="form-group">
+                  Low
+                  <label class="radio-inline setup-pref">
+                    <input type="radio" name="{{preference.name}} " id="{{preference.name}} 1" value="option1"> &nbsp;
+                  </label>
+                  <label class="radio-inline setup-pref">
+                    <input type="radio" name="{{preference.name}} " id="{{preference.name}}  2" value="option2"> &nbsp;
+                  </label>
+                  <label class="radio-inline setup-pref">
+                    <input type="radio" name="{{preference.name}} " id="{{preference.name}}  3" value="option3"> &nbsp;
+                  </label>
+                  <label class="radio-inline setup-pref">
+                    <input type="radio" name="{{preference.name}} " id="{{preference.name}}  4" value="option4"> &nbsp;
+                  </label>
+                  <label class="radio-inline setup-pref">
+                    <input type="radio" name="{{preference.name}}" id="{{preference.name}} 5" value="option5"> &nbsp;
+                  </label>
+                  High
+                </div>
+
+              </li>
+           
+                <button class="add-btn" ng-click="preferences.push({})">+ Add More</button>
+           
+            </ul>
+        </div>   
+      </div>
+
+      <div class="col-md-3 pull-right">
+        <a href="#/Vola-results" class="nav-btn">Submit</a>
+      </div>
+  </div>
+</div>

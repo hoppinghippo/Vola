@@ -1,0 +1,55 @@
+<nav class="navbar navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">	<div class="navbar-brand-logo"></div></a>
+    </div>
+  </div><!-- /.container-fluid -->
+</nav>
+<div class="container-fluid">
+  <div class="container-setup" ng-controller="adminHomeCtrl">
+    <h2>
+       {{adminUser}} Profile
+      
+    </h2> 
+     <div class="col-md-6">
+        <h4>{{attributeName}}</h4>  
+        <ul class="study-pref">
+          <li ng-repeat="community in communites">
+            <label class="setup-prefs" ng-model="community.name">{{community.name}}</label>            
+            <div class="dropdown">
+              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                <li ng-repeat="group in community.group" >
+                  <a href="#">{{group.name}}</a>
+                </li>
+              </ul>
+            </div>            
+          </li>         
+          <button class="add-btn" ng-click="communites.push({})">+ Add More</button>       
+        </ul>
+    </div>   
+    <div class="col-md-3 pull-right">
+
+      <div class="upcoming-events">
+
+        <ul>
+            <h3>Upcoming Events</h3>
+          <li ng-repeat="upcoming in upcomings">
+            <label class="upcoming"><input ng-model="upcoming.name"></label>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+  </div>
+</div>

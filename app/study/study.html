@@ -1,0 +1,65 @@
+<nav class="navbar navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">	<div class="navbar-brand-logo"></div></a>
+    </div>
+  </div><!-- /.container-fluid -->
+</nav>
+<div class="container-fluid">
+  <div class="container-setup" ng-controller="setup-3Ctrl">
+    <h2>
+      Study Preferences
+    </h2> 
+     <h4>
+      What matters to you the most? With a rating from 1-5.
+    </h4> 
+    <div class="col-md-2">
+      <label>Distance:</label>
+      <select class="form-control">
+        <option value="one">1 mi</option>
+        <option value="two">2 mi</option>
+        <option value="three">3 mi</option>
+        <option value="ten">10 mi</option>
+        <option value="twenty">20 mi</option>
+      </select>
+    </div>
+    <br/><br/> <br/><br/>
+    <ul class="study-pref">
+      <li ng-repeat="preference in preferences">
+
+        <label class="setup-prefs" ng-model="preference.name">{{preference.name}}</label>
+        <div class="form-group">
+          Low
+          <label class="radio-inline setup-pref">
+            <input type="radio" name="preference.name" id="preference.name 1" value="option1"> &nbsp;
+          </label>
+          <label class="radio-inline setup-pref">
+            <input type="radio" name="preference.name" id="preference.name 2" value="option2"> &nbsp;
+          </label>
+          <label class="radio-inline setup-pref">
+            <input type="radio" name="preference.name" id="preference.name 3" value="option3"> &nbsp;
+          </label>
+          <label class="radio-inline setup-pref">
+            <input type="radio" name="preference.name" id="preference.name 4" value="option4"> &nbsp;
+          </label>
+          <label class="radio-inline setup-pref">
+            <input type="radio" name="preference.name" id="preference.name 5" value="option5"> &nbsp;
+          </label>
+          High
+        </div>
+
+      </li>
+   
+        <button class="add-btn" ng-click="preferences.push({})">+ Add More</button>
+   
+    </ul>
+    
+  </div>
+</div>

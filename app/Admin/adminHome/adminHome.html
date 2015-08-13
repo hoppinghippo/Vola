@@ -1,0 +1,52 @@
+<nav class="navbar navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">	<div class="navbar-brand-logo"></div></a>
+    </div>
+  </div><!-- /.container-fluid -->
+</nav>
+<div class="container-fluid">
+  <div class="container-setup" ng-controller="adminHomeCtrl">
+    <h2>
+      {{adminUser}} Profile
+    </h2> 
+      <div class="col-md-3">
+           <ul>
+            <li ng-repeat="atribute in atributes">
+     
+                  <a class="vola-activity-link" ng-model="atribute.name" href="#/adminAttributes" ng-click="loadAtt(atribute.name)">{{atribute.name}}</a>    
+         
+            </li>
+          </ul>
+      </div>
+      <div class="col-md-3">
+        <ul>
+        <li ng-repeat="service in adminServices">
+ 
+              <a class="vola-adminSvc-link" ng-model="atribute.name" href="#/adminServices" ng-click="loadAdminSvc(service.name)">{{service.name}}</a>    
+     
+        </li>
+      </ul>
+      </div>
+      <div class="col-md-3 pull-right">
+
+        <div class="upcoming-events">
+
+          <ul>
+              <h3>Upcoming Events</h3>
+            <li ng-repeat="upcoming in upcomings">
+              <label class="upcoming"><input ng-model="upcoming.name"></label>
+            </li>
+          </ul>
+        </div>
+      </div>
+    
+  </div>
+</div>
